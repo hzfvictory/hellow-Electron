@@ -1,0 +1,38 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron .",
+    "pro": "cross-env NODE_ENV=production electron .",
+    "build": "electron-builder --mac"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^6.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron-builder": "^21.2.0"
+
+  },
+  "build": {
+    "productName": "DEMO",
+    "appId": "com.xxx.app",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  }
+}
