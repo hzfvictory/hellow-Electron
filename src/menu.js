@@ -47,29 +47,29 @@ class MenuBuilder {
 
     buildDarwinTemplate() {
         const subMenuAbout = {
-            label: 'Electron',
+            label: '网易云音乐',
             submenu: [
                 {
-                    label: 'About ElectronReact',
+                    label: '关于网易云音乐',
                     selector: 'orderFrontStandardAboutPanel:'
                 },
                 {type: 'separator'},
-                {label: 'Services', submenu: []},
+                {label: '偏好设置', submenu: []},
                 {type: 'separator'},
                 {
-                    label: 'Hide ElectronReact',
+                    label: '隐藏窗口',
                     accelerator: 'Command+H',
                     selector: 'hide:'
                 },
                 {
-                    label: 'Hide Others',
+                    label: '隐藏其他',
                     accelerator: 'Command+Shift+H',
                     selector: 'hideOtherApplications:'
                 },
-                {label: 'Show All', selector: 'unhideAllApplications:'},
+                {label: '隐藏所有', selector: 'unhideAllApplications:'},
                 {type: 'separator'},
                 {
-                    label: 'Quit',
+                    label: '退出',
                     accelerator: 'Command+Q',
                     click: () => {
                         app.quit();
